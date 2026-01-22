@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-beige-light text-wood-dark font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 bg-whatsapp hover:bg-whatsapp-hover text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105;
+  }
+
+  .btn-whatsapp-sm {
+    @apply inline-flex items-center justify-center gap-2 bg-whatsapp hover:bg-whatsapp-hover text-white font-medium py-2 px-4 rounded-full transition-all duration-300 text-sm;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-heading font-semibold text-wood-dark text-center mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-wood-light text-center mb-12 max-w-2xl mx-auto;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Lightbox styles */
+.lightbox-overlay {
+  @apply fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4;
+}
+
+.lightbox-content {
+  @apply relative max-w-5xl max-h-[90vh] w-full;
+}
+
+.lightbox-close {
+  @apply absolute -top-12 right-0 text-white text-4xl cursor-pointer hover:text-gray-300 transition-colors;
+}
+
+/* Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-beige-light;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-wood-light rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-wood-dark;
+}
