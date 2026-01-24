@@ -78,6 +78,7 @@ O projeto está configurado para deploy na Vercel:
 1. Conecte o repositório GitHub à Vercel
 2. A Vercel detectará automaticamente as configurações do Next.js
 3. O deploy será feito automaticamente a cada push na branch main
+
 Site: https://website-r-r-moveis-planejados-nb29.vercel.app/
 
 ## Licença
