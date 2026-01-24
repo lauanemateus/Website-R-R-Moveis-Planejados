@@ -23,8 +23,8 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white pt-20">
         <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          Móveis Planejados
-          <span className="block text-wood-light">sob Medida</span>
+          R&R Móveis Planejados
+          <span className="block text-wood-light">Goiânia</span>
         </h1>
 
         <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl mx-auto opacity-90">

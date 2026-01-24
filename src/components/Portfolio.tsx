@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import WhatsAppButton from "./WhatsAppButton";
 
-type Category = "todos" | "cozinha" | "banheiro" | "escritorio" | "empresa" | "sala";
+type Category = "todos" | "cozinha" | "banheiro" | "escritorio" | "empresa" | "closet" | "quarto" | "canto-alemao" | "despensa" | "sala";
 
 interface PortfolioItem {
   src: string;
@@ -15,57 +15,241 @@ interface PortfolioItem {
 const portfolioItems: PortfolioItem[] = [
   // Cozinha
   {
-    src: "/images/cozinha/IMG-20231207-WA0044.jpg",
+    src: "/images/cozinha/ad59b9bc-9ca1-4902-ac6c-568480f8e7c7.jpg",
     alt: "Cozinha planejada moderna",
     category: "cozinha",
   },
   {
-    src: "/images/cozinha/IMG-20260120-WA0016.jpg",
+    src: "/images/cozinha/735e065f-26c3-4efd-819a-e70528bf93e1.jpg",
     alt: "Cozinha planejada com armários",
     category: "cozinha",
   },
   {
-    src: "/images/cozinha/IMG-20260120-WA0042.jpg",
+    src: "/images/cozinha/IMG-20260120-WA0041.jpg",
     alt: "Cozinha planejada completa",
+    category: "cozinha",
+  },
+  {
+    src: "/images/cozinha/IMG-20260120-WA0042.jpg",
+    alt: "Cozinha planejada elegante",
+    category: "cozinha",
+  },
+  {
+    src: "/images/cozinha/7c18d9c1-7e6d-448d-b5cb-689c43e12904.jpg",
+    alt: "Armários de cozinha",
+    category: "cozinha",
+  },
+  {
+    src: "/images/cozinha/772bb100-c4d4-4332-8d56-287fc326985f.jpg",
+    alt: "Cozinha sob medida",
+    category: "cozinha",
+  },
+  {
+    src: "/images/cozinha/33cea484-a2bd-4555-a90a-63b16a3cfcc8.jpg",
+    alt: "Projeto de cozinha",
+    category: "cozinha",
+  },
+  {
+    src: "/images/cozinha/e2f526eb-65f3-41f3-94e2-933391877e01.jpg",
+    alt: "Cozinha personalizada",
+    category: "cozinha",
+  },
+  {
+    src: "/images/cozinha/8529b0b9-660b-4e5c-a958-f540bfbdcaba.jpg",
+    alt: "Móveis de cozinha",
+    category: "cozinha",
+  },
+  {
+    src: "/images/cozinha/Gemini_Generated_Image_thmrf6thmrf6thmr.png",
+    alt: "Cozinha planejada premium",
+    category: "cozinha",
+  },
+  {
+    src: "/images/cozinha/Gemini_Generated_Image_t5k04pt5k04pt5k0.png",
+    alt: "Cozinha contemporânea",
+    category: "cozinha",
+  },
+  {
+    src: "/images/cozinha/Gemini_Generated_Image_anhdmtanhdmtanhd.png",
+    alt: "Cozinha moderna",
+    category: "cozinha",
+  },
+  {
+    src: "/images/cozinha/Gemini_Generated_Image_c2b8jvc2b8jvc2b8.png",
+    alt: "Cozinha com ilha",
+    category: "cozinha",
+  },
+  {
+    src: "/images/cozinha/Gemini_Generated_Image_rmrlqlrmrlqlrmrl.png",
+    alt: "Cozinha funcional",
+    category: "cozinha",
+  },
+  {
+    src: "/images/cozinha/Gemini_Generated_Image_i9tne9i9tne9i9tn.png",
+    alt: "Cozinha integrada",
     category: "cozinha",
   },
   // Banheiro
   {
-    src: "/images/banheiro/20220618_144219.jpg",
+    src: "/images/banheiro/c1c977c7-51eb-4151-916c-9ca68b4a105e.jpg",
     alt: "Banheiro planejado elegante",
     category: "banheiro",
   },
   {
-    src: "/images/banheiro/20220618_144258.jpg",
+    src: "/images/banheiro/20220618_144239.jpg",
     alt: "Gabinete de banheiro",
     category: "banheiro",
   },
   {
-    src: "/images/banheiro/IMG_20240528_151450_226.jpg",
+    src: "/images/banheiro/Gemini_Generated_Image_hg21y0hg21y0hg21.png",
     alt: "Móveis para banheiro",
+    category: "banheiro",
+  },
+  {
+    src: "/images/banheiro/Gemini_Generated_Image_tdqmnptdqmnptdqm.png",
+    alt: "Banheiro sob medida",
+    category: "banheiro",
+  },
+  {
+    src: "/images/banheiro/Gemini_Generated_Image_kvzcpakvzcpakvzc.png",
+    alt: "Armário de banheiro",
+    category: "banheiro",
+  },
+  {
+    src: "/images/banheiro/Gemini_Generated_Image_vbbpdvbbpdvbbpdv.png",
+    alt: "Banheiro moderno",
+    category: "banheiro",
+  },
+  {
+    src: "/images/banheiro/Gemini_Generated_Image_cc5q2scc5q2scc5q.png",
+    alt: "Banheiro personalizado",
     category: "banheiro",
   },
   // Escritório
   {
-    src: "/images/escritorio/IMG_20240528_154622_338.jpg",
+    src: "/images/escritorio/Screenshot_20250902_165303_Instagram Lite.jpg",
     alt: "Escritório planejado",
+    category: "escritorio",
+  },
+  {
+    src: "/images/escritorio/IMG_20240528_155257_515.jpg",
+    alt: "Home office sob medida",
+    category: "escritorio",
+  },
+  {
+    src: "/images/escritorio/1535c4cb-04cb-4b4e-823f-90c615e79bfa.jpg",
+    alt: "Mesa de escritório",
+    category: "escritorio",
+  },
+  {
+    src: "/images/escritorio/04069379-5eb7-4777-9b57-2519cb88f262.jpg",
+    alt: "Estante de escritório",
+    category: "escritorio",
+  },
+  {
+    src: "/images/escritorio/Gemini_Generated_Image_ms29g0ms29g0ms29.png",
+    alt: "Escritório moderno",
+    category: "escritorio",
+  },
+  {
+    src: "/images/escritorio/Gemini_Generated_Image_7kr5787kr5787kr5.png",
+    alt: "Escritório funcional",
+    category: "escritorio",
+  },
+  {
+    src: "/images/escritorio/Gemini_Generated_Image_kevklckevklckevk.png",
+    alt: "Escritório elegante",
     category: "escritorio",
   },
   // Empresa
   {
-    src: "/images/empresa/IMG_20240528_151450_379.jpg",
+    src: "/images/empresa/170f1430-53a3-407f-936b-357191755900.jpg",
     alt: "Móveis comerciais",
     category: "empresa",
   },
   {
-    src: "/images/empresa/IMG_20240528_152019_356.jpg",
+    src: "/images/empresa/4413e3d2-20d1-42ef-9035-2075846195db.jpg",
     alt: "Mobiliário empresarial",
     category: "empresa",
   },
-  // Sala/Home Theater - usando a imagem hero como referência
   {
-    src: "/images/hero.png",
-    alt: "Painel de TV e Home Theater",
+    src: "/images/empresa/e484afa1-1fbf-466d-a896-14fe594c46b9.jpg",
+    alt: "Móveis para empresa",
+    category: "empresa",
+  },
+  {
+    src: "/images/empresa/Gemini_Generated_Image_67qgw467qgw467qg.png",
+    alt: "Escritório corporativo",
+    category: "empresa",
+  },
+  {
+    src: "/images/empresa/Gemini_Generated_Image_pc00dapc00dapc00.png",
+    alt: "Ambiente empresarial",
+    category: "empresa",
+  },
+  // Closet
+  {
+    src: "/images/closet/3a5dbedd-67e8-4925-b87d-341269765258.jpg",
+    alt: "Closet planejado",
+    category: "closet",
+  },
+  {
+    src: "/images/closet/c8faeda7-aac6-4490-b507-d1e1d0a996f5.jpg",
+    alt: "Closet sob medida",
+    category: "closet",
+  },
+  // Quarto
+  {
+    src: "/images/quarto/2c0f7e96-d9a1-4624-8d07-2f7d70706807.jpg",
+    alt: "Quarto planejado",
+    category: "quarto",
+  },
+  {
+    src: "/images/quarto/7ccb097c-87db-42d3-9397-d29d0f013411.jpg",
+    alt: "Móveis de quarto",
+    category: "quarto",
+  },
+  {
+    src: "/images/quarto/7d6f8728-5fd1-49db-b49b-42cbbe20cee5.jpg",
+    alt: "Quarto sob medida",
+    category: "quarto",
+  },
+  {
+    src: "/images/quarto/7f951c62-cc72-40b5-ac22-a9f6a7346e2c.jpg",
+    alt: "Dormitório planejado",
+    category: "quarto",
+  },
+  {
+    src: "/images/quarto/Gemini_Generated_Image_44n10d44n10d44n1.png",
+    alt: "Quarto moderno",
+    category: "quarto",
+  },
+  {
+    src: "/images/quarto/Gemini_Generated_Image_yz860ryz860ryz86.png",
+    alt: "Quarto elegante",
+    category: "quarto",
+  },
+  // Canto Alemão
+  {
+    src: "/images/canto-alemao/IMG-20260120-WA0011.jpg",
+    alt: "Canto alemão planejado",
+    category: "canto-alemao",
+  },
+  {
+    src: "/images/canto-alemao/Gemini_Generated_Image_y6w1jqy6w1jqy6w1.png",
+    alt: "Canto alemão sob medida",
+    category: "canto-alemao",
+  },
+  // Despensa
+  {
+    src: "/images/despensa/Gemini_Generated_Image_jnw5afjnw5afjnw5.png",
+    alt: "Despensa planejada",
+    category: "despensa",
+  },
+  // Sala
+  {
+    src: "/images/sala/Gemini_Generated_Image_sqai9osqai9osqai.png",
+    alt: "Sala planejada",
     category: "sala",
   },
 ];
@@ -73,10 +257,14 @@ const portfolioItems: PortfolioItem[] = [
 const categories: { id: Category; label: string }[] = [
   { id: "todos", label: "Todos" },
   { id: "cozinha", label: "Cozinha" },
-  { id: "sala", label: "Sala/Home Theater" },
   { id: "banheiro", label: "Banheiro" },
+  { id: "quarto", label: "Quarto" },
+  { id: "closet", label: "Closet" },
+  { id: "sala", label: "Sala" },
   { id: "escritorio", label: "Escritório" },
   { id: "empresa", label: "Empresa" },
+  { id: "canto-alemao", label: "Canto Alemão" },
+  { id: "despensa", label: "Despensa" },
 ];
 
 export default function Portfolio() {
