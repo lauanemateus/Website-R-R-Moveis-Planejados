@@ -32,10 +32,10 @@ export default function Hero() {
           acessível
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-16 sm:mt-0">
           <WhatsAppButton
             text="Solicitar Orçamento Grátis"
-            className="text-lg px-8 py-4"
+            className="text-base sm:text-lg px-6 py-3 sm:px-8 sm:py-4"
           />
           <a
             href="#portfolio"
