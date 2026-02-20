@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center"
+      className="relative min-h-screen flex items-start sm:items-center justify-center"
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
@@ -21,7 +21,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white pt-20">
+      <div className="relative z-10 container mx-auto px-4 text-center text-white pt-24 sm:pt-20">
         <h1 className="font-heading text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
           R&R Móveis Planejados
           <span className="block text-white">Goiânia</span>
@@ -59,7 +59,7 @@ export default function Hero() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="hidden sm:block absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <svg
             className="w-8 h-8 text-white/70"
             fill="none"
