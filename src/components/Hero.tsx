@@ -22,7 +22,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white pt-20">
-        <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+        <h1 className="font-heading text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
           R&R Móveis Planejados
           <span className="block text-white">Goiânia</span>
         </h1>

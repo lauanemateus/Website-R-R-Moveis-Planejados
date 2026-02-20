@@ -6,7 +6,6 @@ import WhatsAppButton from "./WhatsAppButton";
 const navLinks = [
   { href: "#inicio", label: "Início" },
   { href: "#sobre", label: "Sobre" },
-  { href: "#servicos", label: "Serviços" },
   { href: "#portfolio", label: "Portfólio" },
   { href: "#diferenciais", label: "Diferenciais" },
   { href: "#contato", label: "Contato" },
@@ -114,7 +113,6 @@ export default function Header() {
                 {link.label}
               </a>
             ))}
-            <WhatsAppButton variant="small" text="WhatsApp" className="mt-2" />
           </div>
         </nav>
       </div>
