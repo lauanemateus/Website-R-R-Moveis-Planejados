@@ -20,10 +20,14 @@ Site single-page, mobile-first, focado em conversões via WhatsApp. Desenvolvido
 │   └── images/           # Imagens do site
 │       ├── hero.png
 │       ├── banheiro/
+│       ├── canto-alemao/
+│       ├── closet/
 │       ├── cozinha/
+│       ├── despensa/
 │       ├── empresa/
 │       ├── escritorio/
-│       └── maos-a-obra/
+│       ├── quarto/
+│       └── sala/
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx   # Layout principal com SEO
@@ -79,7 +83,7 @@ O projeto está configurado para deploy na Vercel:
 2. A Vercel detectará automaticamente as configurações do Next.js
 3. O deploy será feito automaticamente a cada push na branch main
 
-Site: https://website-r-r-moveis-planejados-nb29.vercel.app/
+Site: https://www.rrmoveisplanejados-goiania.com.br/
 
 ## Licença
 

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "R&R Móveis Planejados | Móveis Sob Medida em Goiânia",
     description:
       "Transformamos seus sonhos em realidade. Móveis planejados com qualidade premium e preço acessível.",
-    url: "https://rrmoveis.com.br",
+    url: "https://www.rrmoveisplanejados-goiania.com.br",
     siteName: "R&R Móveis Planejados",
     locale: "pt_BR",
     type: "website",
