@@ -10,7 +10,7 @@ export default function About() {
           <div className="relative">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/sobre.jpg"
+                src="/images/sobre.webp"
                 alt="R&R Móveis Planejados - Nossos marceneiros"
                 fill
                 className="object-cover"

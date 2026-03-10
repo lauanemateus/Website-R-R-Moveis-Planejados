@@ -10,7 +10,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero.png"
+          src="/images/hero.webp"
           alt="R&R Móveis Planejados - Ambiente planejado"
           fill
           className="object-cover"
