@@ -15,6 +15,26 @@ interface PortfolioItem {
 const portfolioItems: PortfolioItem[] = [
   // Intercalado para variedade visual no filtro "Todos"
   {
+    src: "/images/quarto/0511123e-76fb-45aa-a00d-8af93b74cd02.webp",
+    alt: "Sapateira",
+    category: "quarto",
+  },
+  {
+    src: "/images/quarto/bd1677bf-3c19-4654-8161-fbc5dcdd9c21.webp",
+    alt: "Sapateira",
+    category: "quarto",
+  },
+  {
+    src: "/images/quarto/WhatsApp Image 2026-04-18 at 13.12.55.webp",
+    alt: "Quarto planejado",
+    category: "quarto",
+  },
+  {
+    src: "/images/sala/Gemini_Generated_Image_8v70uw8v70uw8v70.webp",
+    alt: "Sala planejada",
+    category: "sala",
+  },
+  {
     src: "/images/cozinha/ad59b9bc-9ca1-4902-ac6c-568480f8e7c7.webp",
     alt: "Cozinha planejada moderna",
     category: "cozinha",
@@ -178,11 +198,6 @@ const portfolioItems: PortfolioItem[] = [
     src: "/images/banheiro/Gemini_Generated_Image_vbbpdvbbpdvbbpdv.webp",
     alt: "Banheiro moderno",
     category: "banheiro",
-  },
-  {
-    src: "/images/quarto/Gemini_Generated_Image_yz860ryz860ryz86.webp",
-    alt: "Quarto elegante",
-    category: "quarto",
   },
   {
     src: "/images/escritorio/Gemini_Generated_Image_ms29g0ms29g0ms29.webp",
