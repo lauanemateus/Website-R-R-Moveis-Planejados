@@ -24,6 +24,16 @@ const portfolioItems: PortfolioItem[] = [
     alt: "Cozinha planejada moderna",
     category: "cozinha",
   },
+    {
+    src: "/images/cozinha/Gemini_Generated_Image_i9tne9i9tne9i9tn.webp",
+    alt: "Cozinha",
+    category: "cozinha",
+  },
+  {
+    src: "/images/cozinha/e2f526eb-65f3-41f3-94e2-933391877e01.webp",
+    alt: "Cozinha personalizada",
+    category: "cozinha",
+  },
   {
     src: "/images/closet/3a5dbedd-67e8-4925-b87d-341269765258.webp",
     alt: "Closet planejado",
@@ -38,6 +48,11 @@ const portfolioItems: PortfolioItem[] = [
     src: "/images/escritorio/Gemini_Generated_Image_ms29g0ms29g0ms29.webp",
     alt: "Escritório moderno",
     category: "escritorio",
+  },
+  {
+    src: "/images/cozinha/IMG-20260120-WA0042.webp",
+    alt: "Sala e Cozinha integrada com balcão",
+    category: "cozinha",
   },
   {
     src: "/images/quarto/bd1677bf-3c19-4654-8161-fbc5dcdd9c21.webp",
@@ -145,11 +160,6 @@ const portfolioItems: PortfolioItem[] = [
     category: "empresa",
   },
   {
-    src: "/images/cozinha/IMG-20260120-WA0042.webp",
-    alt: "Cozinha planejada elegante",
-    category: "cozinha",
-  },
-  {
     src: "/images/banheiro/Gemini_Generated_Image_tdqmnptdqmnptdqm.webp",
     alt: "Banheiro sob medida",
     category: "banheiro",
@@ -220,11 +230,6 @@ const portfolioItems: PortfolioItem[] = [
     category: "escritorio",
   },
   {
-    src: "/images/cozinha/e2f526eb-65f3-41f3-94e2-933391877e01.webp",
-    alt: "Cozinha personalizada",
-    category: "cozinha",
-  },
-  {
     src: "/images/escritorio/Gemini_Generated_Image_kevklckevklckevk.webp",
     alt: "Escritório elegante",
     category: "escritorio",
@@ -252,11 +257,6 @@ const portfolioItems: PortfolioItem[] = [
   {
     src: "/images/cozinha/Gemini_Generated_Image_rmrlqlrmrlqlrmrl.webp",
     alt: "Cozinha funcional",
-    category: "cozinha",
-  },
-  {
-    src: "/images/cozinha/Gemini_Generated_Image_i9tne9i9tne9i9tn.webp",
-    alt: "Cozinha integrada",
     category: "cozinha",
   },
   {
