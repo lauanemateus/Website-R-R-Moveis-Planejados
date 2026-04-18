@@ -15,14 +15,39 @@ interface PortfolioItem {
 const portfolioItems: PortfolioItem[] = [
   // Intercalado para variedade visual no filtro "Todos"
   {
+    src: "/images/sala/Gemini_Generated_Image_madje8madje8madj.webp",
+    alt: "Sala elegante",
+    category: "sala",
+  },
+  {
+    src: "/images/cozinha/ad59b9bc-9ca1-4902-ac6c-568480f8e7c7.webp",
+    alt: "Cozinha planejada moderna",
+    category: "cozinha",
+  },
+  {
+    src: "/images/closet/3a5dbedd-67e8-4925-b87d-341269765258.webp",
+    alt: "Closet planejado",
+    category: "closet",
+  },
+  {
     src: "/images/quarto/0511123e-76fb-45aa-a00d-8af93b74cd02.webp",
     alt: "Sapateira",
     category: "quarto",
   },
   {
+    src: "/images/escritorio/Gemini_Generated_Image_ms29g0ms29g0ms29.webp",
+    alt: "Escritório moderno",
+    category: "escritorio",
+  },
+  {
     src: "/images/quarto/bd1677bf-3c19-4654-8161-fbc5dcdd9c21.webp",
     alt: "Sapateira",
     category: "quarto",
+  },
+    {
+    src: "/images/banheiro/20220618_144239.webp",
+    alt: "Gabinete de banheiro",
+    category: "banheiro",
   },
   {
     src: "/images/quarto/WhatsApp Image 2026-04-18 at 13.12.55.webp",
@@ -35,19 +60,9 @@ const portfolioItems: PortfolioItem[] = [
     category: "sala",
   },
   {
-    src: "/images/cozinha/ad59b9bc-9ca1-4902-ac6c-568480f8e7c7.webp",
-    alt: "Cozinha planejada moderna",
-    category: "cozinha",
-  },
-  {
     src: "/images/quarto/2c0f7e96-d9a1-4624-8d07-2f7d70706807.webp",
     alt: "Quarto planejado",
     category: "quarto",
-  },
-  {
-    src: "/images/closet/3a5dbedd-67e8-4925-b87d-341269765258.webp",
-    alt: "Closet planejado",
-    category: "closet",
   },
   {
     src: "/images/sala/Gemini_Generated_Image_sqai9osqai9osqai.webp",
@@ -57,11 +72,6 @@ const portfolioItems: PortfolioItem[] = [
   {
     src: "/images/sala/Gemini_Generated_Image_dvgsuydvgsuydvgs.webp",
     alt: "Sala moderna",
-    category: "sala",
-  },
-  {
-    src: "/images/sala/Gemini_Generated_Image_madje8madje8madj.webp",
-    alt: "Sala elegante",
     category: "sala",
   },
   {
@@ -83,11 +93,6 @@ const portfolioItems: PortfolioItem[] = [
     src: "/images/cozinha/735e065f-26c3-4efd-819a-e70528bf93e1.webp",
     alt: "Cozinha planejada com armários",
     category: "cozinha",
-  },
-  {
-    src: "/images/banheiro/20220618_144239.webp",
-    alt: "Gabinete de banheiro",
-    category: "banheiro",
   },
   {
     src: "/images/quarto/7ccb097c-87db-42d3-9397-d29d0f013411.webp",
@@ -198,11 +203,6 @@ const portfolioItems: PortfolioItem[] = [
     src: "/images/banheiro/Gemini_Generated_Image_vbbpdvbbpdvbbpdv.webp",
     alt: "Banheiro moderno",
     category: "banheiro",
-  },
-  {
-    src: "/images/escritorio/Gemini_Generated_Image_ms29g0ms29g0ms29.webp",
-    alt: "Escritório moderno",
-    category: "escritorio",
   },
   {
     src: "/images/cozinha/33cea484-a2bd-4555-a90a-63b16a3cfcc8.webp",
