@@ -45,8 +45,8 @@ const portfolioItems: PortfolioItem[] = [
     category: "quarto",
   },
   {
-    src: "/images/escritorio/Gemini_Generated_Image_ms29g0ms29g0ms29.webp",
-    alt: "Escritório moderno",
+    src: "/images/escritorio/cd8f3c5a-18e3-44f4-9b72-b0a5b111d627.webp",
+    alt: "Escritório contemporâneo",
     category: "escritorio",
   },
   {
@@ -71,12 +71,12 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     src: "/images/sala/Gemini_Generated_Image_8v70uw8v70uw8v70.webp",
-    alt: "Sala planejada",
+    alt: "Aparador",
     category: "sala",
   },
   {
     src: "/images/quarto/2c0f7e96-d9a1-4624-8d07-2f7d70706807.webp",
-    alt: "Quarto planejado",
+    alt: "Quarda roupa",
     category: "quarto",
   },
   {
@@ -86,18 +86,13 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     src: "/images/sala/Gemini_Generated_Image_dvgsuydvgsuydvgs.webp",
-    alt: "Sala moderna",
+    alt: "Nichos",
     category: "sala",
   },
   {
     src: "/images/empresa/170f1430-53a3-407f-936b-357191755900.webp",
     alt: "Móveis comerciais",
     category: "empresa",
-  },
-  {
-    src: "/images/canto-alemao/IMG-20260120-WA0011.webp",
-    alt: "Canto alemão planejado",
-    category: "canto-alemao",
   },
   {
     src: "/images/despensa/Gemini_Generated_Image_jnw5afjnw5afjnw5.webp",
@@ -118,11 +113,6 @@ const portfolioItems: PortfolioItem[] = [
     src: "/images/closet/c8faeda7-aac6-4490-b507-d1e1d0a996f5.webp",
     alt: "Closet sob medida",
     category: "closet",
-  },
-  {
-    src: "/images/escritorio/cd8f3c5a-18e3-44f4-9b72-b0a5b111d627.webp",
-    alt: "Escritório contemporâneo",
-    category: "escritorio",
   },
   {
     src: "/images/empresa/4413e3d2-20d1-42ef-9035-2075846195db.webp",
@@ -209,6 +199,11 @@ const portfolioItems: PortfolioItem[] = [
     alt: "Cozinha sob medida",
     category: "cozinha",
   },
+    {
+    src: "/images/escritorio/Gemini_Generated_Image_ms29g0ms29g0ms29.webp",
+    alt: "Escritório",
+    category: "escritorio",
+  },
   {
     src: "/images/banheiro/Gemini_Generated_Image_vbbpdvbbpdvbbpdv.webp",
     alt: "Banheiro moderno",
@@ -253,6 +248,11 @@ const portfolioItems: PortfolioItem[] = [
     src: "/images/cozinha/Gemini_Generated_Image_anhdmtanhdmtanhd.webp",
     alt: "Cozinha moderna",
     category: "cozinha",
+  },
+    {
+    src: "/images/canto-alemao/IMG-20260120-WA0011.webp",
+    alt: "Canto alemão planejado",
+    category: "canto-alemao",
   },
   {
     src: "/images/cozinha/Gemini_Generated_Image_rmrlqlrmrlqlrmrl.webp",
