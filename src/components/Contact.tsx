@@ -1,4 +1,14 @@
+"use client";
+
 import WhatsAppButton from "./WhatsAppButton";
+
+declare global {
+  interface Window {
+    gtag_report_conversion?: (url?: string) => boolean;
+  }
+}
+
+const PHONE_NUMBER = "+5562991723696";
 
 export default function Contact() {
   return (
@@ -28,7 +38,13 @@ export default function Contact() {
                   WhatsApp
                 </h3>
                 <a
-                  href="tel:+5562991723696"
+                  href={`tel:${PHONE_NUMBER}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    return window.gtag_report_conversion?.(
+                      `tel:${PHONE_NUMBER}`,
+                    );
+                  }}
                   className="text-wood hover:text-wood-dark transition-colors text-lg"
                 >
                   (62) 99172-3696
@@ -85,10 +101,32 @@ export default function Contact() {
                 Entre em contato pelo WhatsApp e receba um orçamento
                 personalizado sem compromisso.
               </p>
-              <WhatsAppButton
-                text="Solicitar Orçamento Grátis"
-                className="w-full justify-center"
-              />
+              <div className="flex flex-col gap-3">
+                <WhatsAppButton
+                  text="Solicitar Orçamento Grátis"
+                  className="w-full justify-center"
+                />
+                <a
+                  href={`tel:${PHONE_NUMBER}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    return window.gtag_report_conversion?.(
+                      `tel:${PHONE_NUMBER}`,
+                    );
+                  }}
+                  className="inline-flex items-center justify-center gap-2 bg-wood hover:bg-wood-dark text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 w-full"
+                  aria-label="Ligar para R&R Móveis Planejados"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
+                  </svg>
+                  Ligar Agora
+                </a>
+              </div>
             </div>
           </div>
 

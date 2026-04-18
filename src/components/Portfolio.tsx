@@ -65,11 +65,6 @@ const portfolioItems: PortfolioItem[] = [
     category: "banheiro",
   },
   {
-    src: "/images/quarto/WhatsApp Image 2026-04-18 at 13.12.55.webp",
-    alt: "Quarto planejado",
-    category: "quarto",
-  },
-  {
     src: "/images/sala/Gemini_Generated_Image_8v70uw8v70uw8v70.webp",
     alt: "Aparador",
     category: "sala",

@@ -1,3 +1,5 @@
+"use client";
+
 const navLinks = [
   { href: "#inicio", label: "Início" },
   { href: "#sobre", label: "Sobre" },
@@ -6,6 +8,12 @@ const navLinks = [
   { href: "#diferenciais", label: "Diferenciais" },
   { href: "#contato", label: "Contato" },
 ];
+
+declare global {
+  interface Window {
+    gtag_report_conversion?: (url?: string) => boolean;
+  }
+}
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -27,6 +35,7 @@ export default function Footer() {
               href="https://wa.me/5562991723696?text=Olá! Gostaria de fazer um orçamento."
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => window.gtag_report_conversion?.()}
               className="inline-flex items-center gap-2 text-whatsapp hover:text-whatsapp/80 transition-colors"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

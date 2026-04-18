@@ -3,6 +3,18 @@
 const WHATSAPP_LINK =
   "https://wa.me/5562991723696?text=Olá! Gostaria de fazer um orçamento.";
 
+declare global {
+  interface Window {
+    gtag_report_conversion?: (url?: string) => boolean;
+  }
+}
+
+function reportWhatsAppConversion() {
+  if (typeof window !== "undefined" && typeof window.gtag_report_conversion === "function") {
+    window.gtag_report_conversion();
+  }
+}
+
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
     <svg
@@ -33,6 +45,7 @@ export default function WhatsAppButton({
         href={WHATSAPP_LINK}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={reportWhatsAppConversion}
         className={`fixed bottom-6 right-6 z-50 bg-whatsapp hover:bg-whatsapp-hover text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 animate-float ${className}`}
         aria-label="Contato via WhatsApp"
       >
@@ -47,6 +60,7 @@ export default function WhatsAppButton({
         href={WHATSAPP_LINK}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={reportWhatsAppConversion}
         className={`btn-whatsapp-sm ${className}`}
       >
         <WhatsAppIcon className="w-4 h-4" />
@@ -60,6 +74,7 @@ export default function WhatsAppButton({
       href={WHATSAPP_LINK}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={reportWhatsAppConversion}
       className={`btn-whatsapp ${className}`}
     >
       <WhatsAppIcon className="w-5 h-5" />
