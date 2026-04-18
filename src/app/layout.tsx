@@ -67,7 +67,7 @@ export default function RootLayout({
                 }
               };
               gtag('event', 'conversion', {
-                  'send_to': 'AW-17974431501/lHa1CLaSsZ4cEI2e8PpC',
+                  'send_to': 'AW-17974431501/TcVMCLOYyp4cEI2e8PpC',
                   'value': 1.0,
                   'currency': 'BRL',
                   'event_callback': callback
