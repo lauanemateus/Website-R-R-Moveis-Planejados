@@ -9,14 +9,24 @@ export default function Hero() {
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/hero.webp"
-          alt="R&R Móveis Planejados - Ambiente planejado"
-          fill
-          className="object-cover"
-          priority
-          quality={90}
-        />
+        {/* Mobile */}
+          <Image
+            src="/images/hero-mobile.webp"
+            alt="R&R Móveis Planejados - Ambiente planejado"
+            fill
+            className="object-cover sm:hidden"
+            priority
+            quality={90}
+          />
+          {/* Desktop */}
+          <Image
+            src="/images/hero.webp"
+            alt="R&R Móveis Planejados - Ambiente planejado"
+            fill
+            className="object-cover hidden sm:block"
+            priority
+            quality={90}
+          />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
       </div>
 
